@@ -102,7 +102,7 @@
     [self.view addConstraints:horizontalConstraints];
     _horizontalConstraints = horizontalConstraints;
     
-    NSArray<NSLayoutConstraint *> *verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-topSafeMargin-[iv]-(==bottomSafeMargin@750)-|" options:0 metrics:metrics views:views];// Must be ==, >=, or <=
+    NSArray<NSLayoutConstraint *> *verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-topSafeMargin-[iv]-(==bottomSafeMargin@1000)-|" options:0 metrics:metrics views:views];// Must be ==, >=, or <=
     [self.view addConstraints:verticalConstraints];
     _verticalConstraints = verticalConstraints;
 }
