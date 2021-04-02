@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675D53742616CFB7003A3717 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675D53732616CFB7003A3717 /* opencv2.framework */; };
 		67AE0C192615C46400394CC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0C182615C46400394CC6 /* AppDelegate.m */; };
 		67AE0C1C2615C46400394CC6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0C1B2615C46400394CC6 /* SceneDelegate.m */; };
 		67AE0C1F2615C46400394CC6 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0C1E2615C46400394CC6 /* ViewController.mm */; };
@@ -14,11 +15,11 @@
 		67AE0C242615C46800394CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AE0C232615C46800394CC6 /* Assets.xcassets */; };
 		67AE0C272615C46800394CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AE0C252615C46800394CC6 /* LaunchScreen.storyboard */; };
 		67AE0C2A2615C46800394CC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0C292615C46800394CC6 /* main.m */; };
-		67AE0C352615C4F200394CC6 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE0C342615C4F200394CC6 /* opencv2.framework */; };
 		67AE0C3A2615C5C400394CC6 /* RetroFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0C382615C5C400394CC6 /* RetroFilter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		675D53732616CFB7003A3717 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../Library/OpenCV/Releases/3.0.0-ios/opencv2.framework"; sourceTree = "<group>"; };
 		67AE0C142615C46400394CC6 /* Recipe07_ApplyingRetroEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe07_ApplyingRetroEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AE0C172615C46400394CC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67AE0C182615C46400394CC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		67AE0C282615C46800394CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67AE0C292615C46800394CC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67AE0C312615C48200394CC6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		67AE0C342615C4F200394CC6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../Library/OpenCV/Releases/4.5.1-ios/opencv2.framework"; sourceTree = "<group>"; };
 		67AE0C382615C5C400394CC6 /* RetroFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RetroFilter.cpp; sourceTree = "<group>"; };
 		67AE0C392615C5C400394CC6 /* RetroFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RetroFilter.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AE0C352615C4F200394CC6 /* opencv2.framework in Frameworks */,
+				675D53742616CFB7003A3717 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 		67AE0C332615C4F200394CC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				67AE0C342615C4F200394CC6 /* opencv2.framework */,
+				675D53732616CFB7003A3717 /* opencv2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZA2PCCN27W;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/4.5.1-ios\"";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/3.0.0-ios\"";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Recipe07_ApplyingRetroEffect/PrefixHeader.pch";
 				INFOPLIST_FILE = Recipe07_ApplyingRetroEffect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,7 +333,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZA2PCCN27W;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/4.5.1-ios\"";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/3.0.0-ios\"";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Recipe07_ApplyingRetroEffect/PrefixHeader.pch";
 				INFOPLIST_FILE = Recipe07_ApplyingRetroEffect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675D53652616CE6D003A3717 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675D53642616CE6D003A3717 /* opencv2.framework */; };
 		86CD1956260ADF8000132B55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CD1955260ADF8000132B55 /* AppDelegate.m */; };
 		86CD1959260ADF8000132B55 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CD1958260ADF8000132B55 /* SceneDelegate.m */; };
 		86CD195C260ADF8000132B55 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 86CD195B260ADF8000132B55 /* ViewController.mm */; };
@@ -14,12 +15,12 @@
 		86CD1961260ADF8100132B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CD1960260ADF8100132B55 /* Assets.xcassets */; };
 		86CD1964260ADF8100132B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CD1962260ADF8100132B55 /* LaunchScreen.storyboard */; };
 		86CD1967260ADF8100132B55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CD1966260ADF8100132B55 /* main.m */; };
-		86CD19D9260B3F2500132B55 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CD19B7260B383500132B55 /* opencv2.framework */; };
 		86D3F332260DD62D004410D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CD19BF260B397400132B55 /* CoreGraphics.framework */; };
 		86D3F334260DD638004410D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CD19BD260B396F00132B55 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		675D53642616CE6D003A3717 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../Library/OpenCV/Releases/3.0.0-ios/opencv2.framework"; sourceTree = "<group>"; };
 		86CD1951260ADF8000132B55 /* Recipe03_LinkingOpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe03_LinkingOpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CD1954260ADF8000132B55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86CD1955260ADF8000132B55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		86CD1963260ADF8100132B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86CD1965260ADF8100132B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86CD1966260ADF8100132B55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		86CD19B7260B383500132B55 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../Library/OpenCV/Releases/4.5.1-ios/opencv2.framework"; sourceTree = "<group>"; };
 		86CD19BA260B388200132B55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		86CD19BD260B396F00132B55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86CD19BF260B397400132B55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,9 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675D53652616CE6D003A3717 /* opencv2.framework in Frameworks */,
 				86D3F334260DD638004410D6 /* UIKit.framework in Frameworks */,
 				86D3F332260DD62D004410D6 /* CoreGraphics.framework in Frameworks */,
-				86CD19D9260B3F2500132B55 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,10 +92,10 @@
 		86CD19B6260B383500132B55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				675D53642616CE6D003A3717 /* opencv2.framework */,
 				86CD19C2260B39DC00132B55 /* Foundation.framework */,
 				86CD19BF260B397400132B55 /* CoreGraphics.framework */,
 				86CD19BD260B396F00132B55 /* UIKit.framework */,
-				86CD19B7260B383500132B55 /* opencv2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Recipe03_LinkingOpenCV",
-					"\"$(SRCROOT)/../Library/OpenCV/Releases/4.5.1-ios\"",
+					"\"$(SRCROOT)/../Library/OpenCV/Releases/3.0.0-ios\"",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Recipe03_LinkingOpenCV/PrefixHeader.pch";
 				INFOPLIST_FILE = Recipe03_LinkingOpenCV/Info.plist;
@@ -345,7 +345,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Recipe03_LinkingOpenCV",
-					"\"$(SRCROOT)/../Library/OpenCV/Releases/4.5.1-ios\"",
+					"\"$(SRCROOT)/../Library/OpenCV/Releases/3.0.0-ios\"",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Recipe03_LinkingOpenCV/PrefixHeader.pch";
 				INFOPLIST_FILE = Recipe03_LinkingOpenCV/Info.plist;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675D536B2616CF0A003A3717 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675D536A2616CF0A003A3717 /* opencv2.framework */; };
 		67AE0BAA26159B1300394CC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0BA926159B1300394CC6 /* AppDelegate.m */; };
 		67AE0BAD26159B1300394CC6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0BAC26159B1300394CC6 /* SceneDelegate.m */; };
 		67AE0BB026159B1300394CC6 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0BAF26159B1300394CC6 /* ViewController.mm */; };
@@ -14,11 +15,11 @@
 		67AE0BB526159B1400394CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AE0BB426159B1400394CC6 /* Assets.xcassets */; };
 		67AE0BB826159B1400394CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AE0BB626159B1400394CC6 /* LaunchScreen.storyboard */; };
 		67AE0BBB26159B1400394CC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0BBA26159B1400394CC6 /* main.m */; };
-		67AE0BC526159BBA00394CC6 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE0BC426159BBA00394CC6 /* opencv2.framework */; };
 		67AE0BCB26159C7300394CC6 /* PostcardPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0BC926159C7300394CC6 /* PostcardPrinter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		675D536A2616CF0A003A3717 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../Library/OpenCV/Releases/3.0.0-ios/opencv2.framework"; sourceTree = "<group>"; };
 		67AE0BA526159B1300394CC6 /* Recipe05_PrintingPostcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe05_PrintingPostcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AE0BA826159B1300394CC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67AE0BA926159B1300394CC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		67AE0BB926159B1400394CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67AE0BBA26159B1400394CC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67AE0BC226159B8100394CC6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		67AE0BC426159BBA00394CC6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../Library/OpenCV/Releases/4.5.1-ios/opencv2.framework"; sourceTree = "<group>"; };
 		67AE0BC926159C7300394CC6 /* PostcardPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PostcardPrinter.cpp; sourceTree = "<group>"; };
 		67AE0BCA26159C7300394CC6 /* PostcardPrinter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PostcardPrinter.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AE0BC526159BBA00394CC6 /* opencv2.framework in Frameworks */,
+				675D536B2616CF0A003A3717 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 		67AE0BC326159BBA00394CC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				67AE0BC426159BBA00394CC6 /* opencv2.framework */,
+				675D536A2616CF0A003A3717 /* opencv2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZA2PCCN27W;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/4.5.1-ios\"";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/3.0.0-ios\"";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Recipe05_PrintingPostcard/PrefixHeader.pch";
 				INFOPLIST_FILE = Recipe05_PrintingPostcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,7 +333,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZA2PCCN27W;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/4.5.1-ios\"";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/3.0.0-ios\"";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Recipe05_PrintingPostcard/PrefixHeader.pch";
 				INFOPLIST_FILE = Recipe05_PrintingPostcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

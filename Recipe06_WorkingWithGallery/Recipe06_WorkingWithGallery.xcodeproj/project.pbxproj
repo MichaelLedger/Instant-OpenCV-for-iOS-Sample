@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675D53702616CF63003A3717 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675D536F2616CF63003A3717 /* opencv2.framework */; };
 		67AE0BDE26159F2200394CC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0BDD26159F2200394CC6 /* AppDelegate.m */; };
 		67AE0BE126159F2200394CC6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0BE026159F2200394CC6 /* SceneDelegate.m */; };
 		67AE0BE426159F2200394CC6 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0BE326159F2200394CC6 /* ViewController.mm */; };
@@ -14,12 +15,12 @@
 		67AE0BE926159F2400394CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AE0BE826159F2400394CC6 /* Assets.xcassets */; };
 		67AE0BEC26159F2400394CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AE0BEA26159F2400394CC6 /* LaunchScreen.storyboard */; };
 		67AE0BEF26159F2400394CC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0BEE26159F2400394CC6 /* main.m */; };
-		67AE0BF926159FB400394CC6 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE0BF826159FB400394CC6 /* opencv2.framework */; };
 		67AE0BFD2615A35200394CC6 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 67AE0BFC2615A35200394CC6 /* haarcascade_frontalface_alt2.xml */; };
 		67AE0C012615A39A00394CC6 /* PostcardPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0C002615A39A00394CC6 /* PostcardPrinter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		675D536F2616CF63003A3717 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../Library/OpenCV/Releases/3.0.0-ios/opencv2.framework"; sourceTree = "<group>"; };
 		67AE0BD926159F2200394CC6 /* Recipe06_WorkingWithGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe06_WorkingWithGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AE0BDC26159F2200394CC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67AE0BDD26159F2200394CC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		67AE0BED26159F2400394CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67AE0BEE26159F2400394CC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67AE0BF626159F5800394CC6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		67AE0BF826159FB400394CC6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../Library/OpenCV/Releases/4.5.1-ios/opencv2.framework"; sourceTree = "<group>"; };
 		67AE0BFC2615A35200394CC6 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
 		67AE0BFF2615A39A00394CC6 /* PostcardPrinter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PostcardPrinter.hpp; sourceTree = "<group>"; };
 		67AE0C002615A39A00394CC6 /* PostcardPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PostcardPrinter.cpp; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AE0BF926159FB400394CC6 /* opencv2.framework in Frameworks */,
+				675D53702616CF63003A3717 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 		67AE0BF726159FB300394CC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				67AE0BF826159FB400394CC6 /* opencv2.framework */,
+				675D536F2616CF63003A3717 /* opencv2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 				CODE_SIGN_ENTITLEMENTS = Recipe06_WorkingWithGallery/Recipe06_WorkingWithGallery.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZA2PCCN27W;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/4.5.1-ios\"";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/3.0.0-ios\"";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Recipe06_WorkingWithGallery/PrefixHeader.pch";
 				INFOPLIST_FILE = Recipe06_WorkingWithGallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -342,7 +342,7 @@
 				CODE_SIGN_ENTITLEMENTS = Recipe06_WorkingWithGallery/Recipe06_WorkingWithGallery.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZA2PCCN27W;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/4.5.1-ios\"";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/3.0.0-ios\"";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Recipe06_WorkingWithGallery/PrefixHeader.pch";
 				INFOPLIST_FILE = Recipe06_WorkingWithGallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
