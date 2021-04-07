@@ -1,5 +1,5 @@
 # Instant-OpenCV-for-iOS-Sample
-The sample code files for *Instant OpenCV for iOS*.
+The sample code files for *[Instant OpenCV for iOS](https://michaelledger.github.io/gitbook/PDF/Instant-OpenCV-for-iOS/)*.
 
 ## Unzip/Download OpenCV Releases
 
