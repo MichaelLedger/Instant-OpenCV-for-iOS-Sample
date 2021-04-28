@@ -17,6 +17,7 @@
 		67AE0BEF26159F2400394CC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0BEE26159F2400394CC6 /* main.m */; };
 		67AE0BFD2615A35200394CC6 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 67AE0BFC2615A35200394CC6 /* haarcascade_frontalface_alt2.xml */; };
 		67AE0C012615A39A00394CC6 /* PostcardPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67AE0C002615A39A00394CC6 /* PostcardPrinter.cpp */; };
+		67D3771B2638F77F004939B5 /* ImageWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D3771A2638F77F004939B5 /* ImageWriter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		67AE0BFF2615A39A00394CC6 /* PostcardPrinter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PostcardPrinter.hpp; sourceTree = "<group>"; };
 		67AE0C002615A39A00394CC6 /* PostcardPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PostcardPrinter.cpp; sourceTree = "<group>"; };
 		67AE0C052615AA6400394CC6 /* Recipe06_WorkingWithGallery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Recipe06_WorkingWithGallery.entitlements; sourceTree = "<group>"; };
+		67D377192638F77E004939B5 /* Recipe06_WorkingWithGallery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recipe06_WorkingWithGallery-Bridging-Header.h"; sourceTree = "<group>"; };
+		67D3771A2638F77F004939B5 /* ImageWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWriter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				67AE0BED26159F2400394CC6 /* Info.plist */,
 				67AE0BEE26159F2400394CC6 /* main.m */,
 				67AE0BF626159F5800394CC6 /* PrefixHeader.pch */,
+				67D3771A2638F77F004939B5 /* ImageWriter.swift */,
+				67D377192638F77E004939B5 /* Recipe06_WorkingWithGallery-Bridging-Header.h */,
 			);
 			path = Recipe06_WorkingWithGallery;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 				TargetAttributes = {
 					67AE0BD826159F2200394CC6 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -174,6 +180,7 @@
 				67AE0C012615A39A00394CC6 /* PostcardPrinter.cpp in Sources */,
 				67AE0BDE26159F2200394CC6 /* AppDelegate.m in Sources */,
 				67AE0BEF26159F2400394CC6 /* main.m in Sources */,
+				67D3771B2638F77F004939B5 /* ImageWriter.swift in Sources */,
 				67AE0BE126159F2200394CC6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,12 +324,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Recipe06_WorkingWithGallery/Recipe06_WorkingWithGallery.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZA2PCCN27W;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/3.0.0-ios\"";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Recipe06_WorkingWithGallery/PrefixHeader.pch";
 				INFOPLIST_FILE = Recipe06_WorkingWithGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +340,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "MichaelLedger.Recipe06-WorkingWithGallery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Recipe06_WorkingWithGallery/Recipe06_WorkingWithGallery-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -339,12 +353,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Recipe06_WorkingWithGallery/Recipe06_WorkingWithGallery.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZA2PCCN27W;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Library/OpenCV/Releases/3.0.0-ios\"";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Recipe06_WorkingWithGallery/PrefixHeader.pch";
 				INFOPLIST_FILE = Recipe06_WorkingWithGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,6 +369,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "MichaelLedger.Recipe06-WorkingWithGallery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Recipe06_WorkingWithGallery/Recipe06_WorkingWithGallery-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "opencv2/imgcodecs/ios.h"
 #import "PostcardPrinter.hpp"
+#import "Recipe06_WorkingWithGallery-Swift.h"
 
 @interface ViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPopoverControllerDelegate>
 {
@@ -84,8 +85,10 @@
 - (IBAction)saveButtonPressed:(UIBarButtonItem *)sender {
     if (postcardImage != nil)
     {
-        UIImageWriteToSavedPhotosAlbum(postcardImage, self,
-                                       nil, NULL);
+//        UIImageWriteToSavedPhotosAlbum(postcardImage, self,
+//                                       nil, NULL);
+//        [ImageWriter deprecatedWriteImageToAlbumWithImage:postcardImage];
+        [ImageWriter writeImageToAlbumWithImage:postcardImage albumName:@"OpenCV"];
         
         /*Terminating app due to uncaught exception 'NSObjectNotAvailableException', reason: 'UIAlertView is deprecated and unavailable for UIScene based applications, please use UIAlertController!'*/
         // Alert window
@@ -96,10 +99,10 @@
 //                   cancelButtonTitle:@"Continue"
 //                   otherButtonTitles:nil];
 //        [alert show];
-        
+
         UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:@"Status" message:@"Saved to the Gallery!" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Continue" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-            
+
         }];
         [alertVc addAction:cancelAction];
         [self presentViewController:alertVc animated:YES completion:nil];

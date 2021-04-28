@@ -63,6 +63,8 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Allow app to save image to your photos</string>
+	<string>Allow app to save images to your device</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allow app to use images from your device</string>
 </dict>
 </plist>
